@@ -1,0 +1,92 @@
+.comment {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.comment div {
+    flex: 1;
+}
+
+.avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    outline: 2px solid var(--green-500);
+    box-sizing: initial;
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
+}
+
+.headerComment {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.profileComment {
+    display: flex;
+    flex-flow: column;
+    text-align: start;
+    line-height: 1.6;
+}
+
+.profileComment strong {
+    color: var(--gray-100);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.profile time {
+    color: var(--gray-400);
+    font-size: 0.75rem;
+}
+
+.deleteComment {
+    color: var(--gray-400);
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-self: flex-start;
+    border-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.deleteComment:hover {
+    color: red;
+}
+
+.contentComment {
+    background: var(--gray-600);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.contentComment p {
+    padding: 1rem 0;
+    color: var(--gray-300);
+}
+
+.comment div footer button {
+    margin-top: 0.5rem;
+    background: transparent;
+    border: 0;
+    color: var(--gray-400);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.comment div footer button:hover {
+    color: var(--green-500);
+}
+.comment div footer button svg {
+    margin-right: 0.5rem;
+}
+.comment div footer button span::before {
+    content: "\2022";
+    padding: 0 0.25rem;
+}
